@@ -5403,7 +5403,7 @@ button svg {
 .hero_section {
   height: 90vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-              url('../img/karl-greif-H5IXIH254AU-unsplash.jpg') center/cover no-repeat;
+              url('../img/drone_technology.jpg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5450,6 +5450,86 @@ button svg {
     font-size: 1rem;
   }
 }
+
+.hero_section1 {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../img/embedded-and-iot.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero_content1 h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero_content1 p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero_content1 h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero_content1 p {
+    font-size: 1rem;
+  }
+}
+
+
+.hero_section2 {
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../img/cybersecurity-hacking.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero_content2 h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero_content2 p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero_content2 h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero_content2 p {
+    font-size: 1rem;
+  }
+}
+
+
+
 
 
 
