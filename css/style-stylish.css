@@ -489,6 +489,7 @@ a {
 .mil-text-xl {
   font-size: 24px;
   line-height: 160%;
+  
 }
 
 .mil-text-lg {
@@ -1349,6 +1350,13 @@ spaces
   br {
     display: none;
   }
+}
+
+
+
+.mil-mt130 {
+  margin-top: 40px;
+  color: white;
 }
 /* -------------------------------------------
 
