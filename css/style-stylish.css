@@ -479,7 +479,7 @@ a {
   color: #CD512F;
 }
 .mil-arrow-link.mil-a2:after {
-  olor: #CD512F;
+  color: #CD512F;
 }
 .mil-arrow-link:hover:after {
   -webkit-transform: translateX(5px);
@@ -489,7 +489,6 @@ a {
 .mil-text-xl {
   font-size: 24px;
   line-height: 160%;
-  
 }
 
 .mil-text-lg {
@@ -758,6 +757,15 @@ a {
   -webkit-line-clamp: 3;
   line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.blog_section_content {
+  display: flex;
+}
+
+.blog_section_content h1 {
+  text-align: center;
+  font-size: calc(1rem + 3.3vw);
 }
 
 .mil-rubber {
@@ -5409,7 +5417,7 @@ button svg {
 
 
 .hero_section {
-  height: 90vh;
+  height: 95vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
               url('../img/drone_technology.jpg') center/cover no-repeat;
   display: flex;
@@ -5427,13 +5435,13 @@ button svg {
 
 .hero_content p {
   font-size: 1.2rem;
-  margin-bottom: 30px;
-  max-width: 600px;
+  margin-bottom: 10px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero_button {
+/* .hero_button {
   display: inline-block;
   padding: 12px 25px;
   background-color: #ff7f50;
@@ -5446,7 +5454,7 @@ button svg {
 
 .hero_button:hover {
   background-color: #ff6333;
-}
+} */
 
 /* Responsive tweaks */
 @media (max-width: 768px) {
