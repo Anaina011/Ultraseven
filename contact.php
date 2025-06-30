@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars(strip_tags(trim($_POST["message"])));
 
     // Set your email
-    $to = "anainass011@gmail.com"; // Replace with your email
+    $to = "Connect@ultraseven.in"; // Replace with your email
     $subject = "New Contact Form Submission";
     $headers = "From: $name <$email>\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -19,9 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Message sent successfully.";
+        echo "<script type='text/javascript'>alert('Email sent successfully.'); window.location.href = 'contact.html';</script>";
     } else {
-        echo "Message sending failed. Please try again.";
+        echo "<script type='text/javascript'>alert('Failed to send message.'); window.location.href = 'contact.html';</script>";
     }
 } else {
     // Block direct access

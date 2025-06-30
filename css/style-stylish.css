@@ -3287,7 +3287,7 @@ menu window
 .mil-main-menu li ul li:hover a {
   padding-left: 5px;
 }
-.mil-main-menu li.mil-has-children:after {
+.mil-main-menu li.ham_sec:after {
   font-family: "Font Awesome 5 Pro";
   font-weight: 100;
   content: "\f061";

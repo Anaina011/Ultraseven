@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon | UltraSeven</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #222;
+        }
+
+
+        .coming-soon-wrapper {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+
+        .coming-soon-box {
+            background: white;
+            padding: 60px 40px;
+            max-width: 600px;
+            width: 100%;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+            animation: fadeIn 1s ease;
+        }
+
+
+        .coming-soon-box h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: #ff7f50;
+        }
+
+        .coming-soon-box h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+
+        .coming-soon-box p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+
+        .contact-button {
+            padding: 12px 32px;
+            background-color: #ff7f50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #e7663b;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .coming-soon-box {
+                padding: 40px 20px;
+            }
+
+            .coming-soon-box h1 {
+                font-size: 2rem;
+            }
+
+            .coming-soon-box h2 {
+                font-size: 1.4rem;
+            }
+
+            .coming-soon-box p {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="coming-soon-wrapper">
+        <div class="coming-soon-box">
+            <h1>Ultraseven</h1>
+            <h2>Coming Soon</h2>
+            <p>We’re crafting something amazing for the next generation of drone professionals.</p>
+            <a href="contact.html" class="contact-button">Notify Me</a>
+        </div>
+    </section>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero {
+            background: url("./img/kyle-loftus-Ve7iqUNkGsA-unsplash.jpg") center/cover no-repeat;
+            height: 100vh;
+            position: relative;
+        }
+
+     
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content-box {
+            max-width: 600px;
+            color: #fff;
+            padding: 40px 30px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+        }
+
+        .logo {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-info a {
+            color: #ff7f50;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.4rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff7f50;
+        }
+
+
+
+     
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .content-box {
+                padding: 30px 20px;
+            }
+
+            .logo {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="overlay">
+            <div class="content-box">
+                <img src="img/u7logo_1.png" alt="Logo" class="logo" />
+                <h1>Launching soon!</h1>
+                <p>
+                    Exciting news! Our website is relaunching. Until then, contact us via email, phone, or WhatsApp for
+                    assistance. Stay tuned for an enhanced experience!
+                </p>
+
+                <div class="contact-info">
+                    <p><strong>For any inquiries please mail us</strong><br>
+                        <a href="mailto:info@example.com">info@example.com</a>
+                    </p>
+                    <p><strong>Give us a call!</strong><br>
+                        <a href="tel:+97143233480">+971 43233480</a>
+                    </p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html> -->
