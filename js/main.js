@@ -27,9 +27,18 @@ document.addEventListener("DOMContentLoaded", function () {
         initAll(); // Replace this with your reinitialization logic
     });
 
+    initAll();
+
     function initAll() {
-        // Re-initialize components as needed
-        // If nothing needed, leave empty for pages like coming-soon
+        // ✅ Remove header if on Coming Soon page
+        if (window.location.href.includes('coming-soon.html')) {
+            const header = document.querySelector('.mil-fixed');
+            if (header) {
+                header.remove();
+            }
+        }
+
+        // 👉 Your other reinitialization (Swiper, GSAP, etc.) can stay below
     }
     /* -------------------------------------------
 
