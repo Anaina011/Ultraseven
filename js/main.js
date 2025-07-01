@@ -27,6 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         initAll(); // Replace this with your reinitialization logic
     });
 
+    function initAll() {
+        // Re-initialize components as needed
+        // If nothing needed, leave empty for pages like coming-soon
+    }
     /* -------------------------------------------
 
     register gsap plugins
