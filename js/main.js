@@ -27,6 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
         initAll(); // Replace this with your reinitialization logic
     });
 
+    // ✅ Reinitialize on hard reload too
+    document.addEventListener('DOMContentLoaded', () => {
+        initAll(); // Ensures initAll works even on full reload
+    });
+
     initAll();
 
     function initAll() {
