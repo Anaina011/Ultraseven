@@ -19,8 +19,12 @@ document.addEventListener("DOMContentLoaded", function () {
     ------------------------------------------- */
 
     const swup = new Swup({
-        containers: ['#swup', '#swupMenu', '#swup-opm'],
-        animateHistoryBrowsing: true,
+        containers: ['#swup'],
+    });
+
+    // Reinitialize scripts after page transition
+    swup.hooks.on('content:replace', () => {
+        initAll(); // Replace this with your reinitialization logic
     });
 
     /* -------------------------------------------
