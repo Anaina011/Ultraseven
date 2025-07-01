@@ -6,129 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coming Soon</title>
 
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/plugins/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style-stylish.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body,
         html {
             height: 100%;
+            margin: 0;
             font-family: 'Inter', sans-serif;
         }
 
         .hero {
             background: url("./img/kyle-loftus-Ve7iqUNkGsA-unsplash.jpg") center/cover no-repeat;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
             position: relative;
         }
 
-
         .overlay {
-            background-color: rgba(0, 0, 0, 0.5);
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .content-box {
-            max-width: 600px;
-            color: #fff;
-            padding: 40px 30px;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2rem;
             border-radius: 12px;
-        }
-
-        .logo {
-            width: 120px;
-            margin-bottom: 20px;
+            max-width: 600px;
         }
 
         h1 {
-            font-size: 2.8rem;
-            margin-bottom: 20px;
+            margin-bottom: 1rem;
         }
 
-        p {
-            font-size: 1rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .contact-info a {
+        a {
             color: #ff7f50;
             text-decoration: none;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 1.4rem;
-            transition: color 0.3s;
-        }
-
-        .social-icons a:hover {
-            color: #ff7f50;
-        }
-
-
-
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .content-box {
-                padding: 30px 20px;
-            }
-
-            .logo {
-                width: 100px;
-            }
         }
     </style>
 </head>
 
 <body>
-    <div class="hero">
-        <div class="overlay">
-            <div class="content-box">
-                <a href="index.html"><img src="img/u7logo_1.png" alt="Logo" class="logo" /></a>
-                <h1>Launching soon!</h1>
-                <p>
-                    Exciting news! Our courses are launching soon. Until then, contact us via email, phone, or WhatsApp
-                    for assistance. Stay tuned for an enhanced learning experience!
-                </p>
-                </p>
+    <div id="smooth-wrapper" class="mil-page-wrapper">
 
-                <div class="contact-info">
-                    <p><strong>For any inquiries please mail us</strong><br>
-                        <a href="mailto:Connect@ultraseven.in">Connect@ultraseven.in</a>
-                    </p>
-                    <p><strong>Give us a call!</strong><br>
-                        <a href="tel:91 80890 66879">91 80890 66879</a>
-                    </p>
+        <!-- SWUP target -->
+        <div class="mil-transition-fade" id="swup">
+            <div class="mil-transition-frame">
+                <div id="smooth-content" class="mil-content">
+                    <div class="hero">
+                        <div class="overlay">
+                            <a href="index.html"><img src="img/u7logo_1.png" alt="Logo"
+                                    style="width:120px; margin-bottom:20px;"></a>
+                            <h1>Launching soon!</h1>
+                            <p>Exciting news! Our courses are launching soon. Until then, contact us via email, phone,
+                                or WhatsApp for assistance.</p>
+                            <p><strong>Email:</strong> <a href="mailto:Connect@ultraseven.in">Connect@ultraseven.in</a>
+                            </p>
+                            <p><strong>Call:</strong> <a href="tel:918089066879">91 80890 66879</a></p>
+                        </div>
+                    </div>
                 </div>
-                <!-- 
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
-                </div> -->
             </div>
         </div>
+
     </div>
+
+    <!-- Required JS scripts -->
+    <script src="js/plugins/swup.min.js"></script>
+    <script src="js/plugins/gsap.min.js"></script>
+    <script src="js/plugins/ScrollSmoother.min.js"></script>
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <script src="js/plugins/swiper.min.js"></script>
+    <script src="js/plugins/parallax.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
