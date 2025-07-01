@@ -30,15 +30,16 @@ document.addEventListener("DOMContentLoaded", function () {
     initAll();
 
     function initAll() {
-        // ✅ Remove header if on Coming Soon page
+        const header = document.querySelector('.mil-fixed');
+
+        // Hide the header only on coming-soon.html
         if (window.location.href.includes('coming-soon.html')) {
-            const header = document.querySelector('.mil-fixed');
-            if (header) {
-                header.remove();
-            }
+            if (header) header.style.display = 'none';
+        } else {
+            if (header) header.style.display = ''; // Restore it on other pages
         }
 
-        // 👉 Your other reinitialization (Swiper, GSAP, etc.) can stay below
+        // Other reinitialization logic...
     }
     /* -------------------------------------------
 
